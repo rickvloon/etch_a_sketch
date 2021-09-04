@@ -1,0 +1,109 @@
+body {
+    background: url(images/arcade1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* HEADER */
+
+header h1 {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.size {
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* Board */
+
+.board {
+    display: grid;
+    border: 8px ridge grey;
+    margin: 20px auto 0px auto;
+    height: 600px;
+    width: 600px;
+    justify-content: center;
+    background-color: white;
+}
+
+/* Buttons */
+
+button {
+    background-color: yellow;
+    font-family: sans-serif;
+    font-size: 20px;
+    height: 30px;
+    border-radius: 100px;
+    border: 4px ridge grey;
+    margin: 10px 10px;
+    width: 200px;
+}
+
+.button-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-section-lower {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#active {
+    background-color: yellow;
+    font-family: sans-serif;
+    font-size: 20px;
+    height: 30px;
+    border-radius: 100px;
+    border: 4px ridge grey;
+    margin: 10px 10px;
+    width: 200px;
+    animation: scaleup 0.5s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scaleup{
+    0%{
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+    100%{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        background-color: red;
+    }
+}
+
+
+#clear{
+    background-color: yellow;
+    font-family: sans-serif;
+    font-size: 20px;
+    height: 30px;
+    border-radius: 100px;
+    border: 4px ridge grey;
+    margin: 10px 10px;
+    width: 200px;
+    animation: clear 0.5s linear;
+}
+
+@keyframes clear{
+    0%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: red;
+    }
+    100%{
+        background-color: yellow;
+    }
+}
